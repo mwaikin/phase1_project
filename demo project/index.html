@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Car sale</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <h4 class="one">T<span class="two">ipsy</span> </h4></div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#cars">VIEW CARS</a></li>
+                <li><a href="#addCarForm">POST CAR</a></li>
+                <li><a href="#cart">VIEW CART</a></li>
+                <li><a href="#footer">CONTACTS</a></li>
+            </ul>
+           
+                        </div>
+        </nav>
+
+        </div>
+    </div>
+</header>
+  <section class="hero">
+   
+    <div class="container">
+        
+        <h1>Welcome <br>
+            <span>Tispy Car Services</span></h1>
+        <p> </p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="hero-img">
+        <img src="./images/BMWX7.png" alt="hero image">
+    </div>
+    <div class="searching">
+        <input type="text" id="search" placeholder="Search by car name">
+        <button id="searchButton">Search</button><br>
+    </div>
+  
+</section>  
+
+<!-- Pick fetched cars from the db.json file -->
+<div id="cars" class="cars1"></div> 
+
+
+<h1>You can post your below</h1>
+
+<!-- A form to add a new car to be rented with the number of cars available -->
+<form id="addCarForm">
+    <input type="text" id="brand" placeholder="Brand">
+    <input type="text" id="model" placeholder="Model">
+    <input type="number" id="price" placeholder="Price">
+    <input type="text" id="category" placeholder="Category">
+    <input type="number" id="carsleft" placeholder="Number of Cars Available">
+    <button type="submit">Add Car</button>
+</form>
+<div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items">
+
+    </ul>
+    <p id="total">Total: $0</p>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Rates</a></li>
+              <li><a href="#">Reach Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i>Kenya, KenyaCity</p>
+          <p><i class="fas fa-envelope"></i> TipsCar@Sales.com</p>
+          <p><i class="fas fa-phone"></i> +254 711 000 000</p>
+      </div>
+      <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
